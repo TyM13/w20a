@@ -13,7 +13,7 @@ def connect_db():
         print("unknown error", error)
 
 
-def execute_statment(cursor, statement, list_of_args=[]): #list of args becomes optional defaults to an empty list
+def execute_statment(cursor, statement): 
     try:
         cursor.execute(statement)
         results = cursor.fetchall()
